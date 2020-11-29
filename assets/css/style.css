@@ -218,3 +218,106 @@ CSS DE ÁREAS ESPECÍFICAS
     align-items: center;
     justify-content: center;
 }
+
+
+
+
+.section_services {
+    display: flex;
+}
+.section_service {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #333;
+    padding: 15px;
+}
+.section_service:first-child {
+    border-left: 1px solid #333;
+}
+.section_service img {
+    width: 60px;
+    height: 60px;
+}
+.section_service h4 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.section_service p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+}
+
+
+.section_projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section_projects_filters {
+    border: 1px solid #CCC;
+    background-color: #DDD;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+.section_projects_filters li {
+    display: inline-block;
+    padding: 10px;
+    border-left: 1px solid #CCC;
+    border-bottom: 3px solid #DDD;
+}
+.section_projects_filters li:hover {
+    border-bottom: 3px solid #B28756;
+}
+.section_projects_filters li:first-child {
+    border-left: 0;
+}
+.section_projects_filters a {
+    color: #555;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+
+
+.section_projects_photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section_projects_photo {
+    width: 280px;
+}
+.section_projects_photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+.section_projects_photoarea img {
+    width: inherit;
+    height: inherit;
+}
+.section_projects_photoinfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+.section_projects_photoinfo h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.section_projects_photoarea:hover .section_projects_photoinfo {
+    display: flex;
+}
